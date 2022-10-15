@@ -202,3 +202,28 @@ function doubleOddNumbers(arr) {
         return num * 2;
     });
 }
+
+const arr1 = [1,2,3,4,5,6,7,8,9];
+
+//use the filter method on arr1 to return a new array containing only numbers greater than 5
+const answer1 = arr1.filter(num => num > 5);
+
+//use the map method on arr1 to return a new array where each number is squared (3 => 9)
+const answer2 = arr1.map(num => num ** 2);
+
+const arr2 = ['goose', 'dog', 'cat', 'mouse', 'deer', 'spider', 'chicken'];
+
+//use the map method on arr2 to return a new array where each string is capitalized ('mouse' => 'Mouse')
+const answer3 = arr2.map(str => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+    //charAt grabs a letter at desired index
+});
+
+
+//use the filter method on arr2 to return a new array containing only strings where string's length is at least 4
+const answer4 = arr2.filter(str => {
+    
+    return str.length >= 4;
+});
+
+
